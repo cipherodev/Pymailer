@@ -1,7 +1,14 @@
 import smtplib, imaplib, email
 from email.message import EmailMessage
-from src.utils import load
 
+def load(file_path) -> list:
+    """Return data"""
+    try:
+        with open(file_path, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, Exception):
+        return []
+        
 class Emailer:
     """
     Sends and reads emails through Gmail.
