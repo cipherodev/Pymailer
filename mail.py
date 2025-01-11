@@ -6,7 +6,7 @@ class Emailer:
     """
     Sends and reads emails through Gmail.
     """
-    def __init__(self, EMAIL_ADDRESS, EMAIL_PASSWORD, IMAP_SERVER = 'imap.gmail.com', SMTP_SERVER = 'smtp.gmail.com', IMAP_PORT = 993, SMTP_PORT = 587, allowed_emails_path = 'data/allowed_emails.json', saved_emails_path='data/saved_emails.json'):
+    def __init__(self, EMAIL_ADDRESS, EMAIL_PASSWORD, IMAP_SERVER = 'imap.gmail.com', SMTP_SERVER = 'smtp.gmail.com', IMAP_PORT = 993, SMTP_PORT = 587, allowed_emails_path = 'allowed_emails.json', saved_emails_path='saved_emails.json'):
         self.EMAIL_ADDRESS = EMAIL_ADDRESS
         self.EMAIL_PASSWORD = EMAIL_PASSWORD
         self.IMAP_SERVER = IMAP_SERVER
